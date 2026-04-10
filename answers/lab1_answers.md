@@ -12,8 +12,8 @@
 ## 1. Assets
 Liệt kê ít nhất 2 assets cần bảo vệ.
 
-- Asset 1: Bảng điểm sinh viên
-- Asset 2: Tài khoản giảng viên
+- Asset 1: Bảng điểm sinh viên – chứa thông tin điểm cần được bảo vệ để tránh bị sửa đổi
+- Asset 2: Tài khoản giảng viên – dùng để nhập và chỉnh sửa điểm nên cần bảo mật
 - Asset 3 (nếu có): Cơ sở dữ liệu hệ thống
 
 ---
@@ -21,9 +21,9 @@ Liệt kê ít nhất 2 assets cần bảo vệ.
 ## 2. Mapping CIA
 Ghép từng sự cố với CIA.
 
-- Sự cố A -> Bảo mật
-- Sự cố B -> Chính trực
-- Sự cố C -> Tính khả dụng
+- Sự cố A -> Bảo mật (Confidentiality): Lộ thông tin điểm sinh viên khi người không có quyền truy cập vào hệ thống
+- Sự cố B -> Chính trực (Integrity): Hacker truy cập tài khoản giảng viên để sửa điểm trong hệ thống
+- Sự cố C -> Tính khả dụng (Availability): Hệ thống lưu điểm bị sập khiến sinh viên không thể xem điểm
 
 ---
 
